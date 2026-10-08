@@ -1,0 +1,23 @@
+{
+  "instagram": "noa_yaakov_ai",
+  "followers": 1,
+  "updatedAt": "2026-10-08T23:54:57.750Z",
+  "source": "owner-reported",
+  "roadMilestones": [
+    10,
+    25,
+    50,
+    100
+  ],
+  "sculptureMilestones": [
+    {
+      "id": "cat",
+      "at": 0
+    },
+    {
+      "id": "coffee",
+      "at": 50
+    }
+  ],
+  "note": "Set followers to a verified non-negative integer and updatedAt to the verification time. null means unverified, not zero followers."
+}
