@@ -30,6 +30,14 @@ Drag to orbit, pinch/wheel to zoom, right drag/two-finger gesture to pan. Phone-
 
 Checked with headless Chromium at 390×844 and 1280×900, and growth thresholds through 1,000 houses. Physical Android/iPhone, Safari, screen readers and low-end FPS remain unverified. This is a simpler procedural scene than the concept illustrations.
 
+## Publishing checklist
+
+- **HTTP serving**: Serve via a static HTTP server or GitHub Pages (root or subpath). Do not load directly via `file://` URLs, which break JSON and module loading.
+- **Real vs. demo counts**: Ensure `neighborhood.json` contains the verified follower count (`followers: null` indicates unverified data, not zero). Do not use `?demo=N` demo URLs as real counts.
+- **Growth thresholds**: Verify milestone features render as expected (roads unlock at 10, 25, 50, and 100 followers; cat statue is always present at 0; coffee statue joins at 50; supports up to 100,000 houses).
+- **Mobile light mode**: Confirm mobile viewports (widths < 600px) default to light mode (shadows disabled, pixel ratio set to 1) for optimal performance.
+- **Device verification note**: Note that physical Android/iPhone devices, Safari, screen reader accessibility, and low-end FPS performance remain unverified.
+
 ## License
 
 Original code and scene geometry are provided for this project. Three.js and OrbitControls are included under the MIT license in vendor/THREE-LICENSE.txt. No model/image assets from the concept illustrations are shipped.
